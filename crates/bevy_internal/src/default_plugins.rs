@@ -1,5 +1,28 @@
 use bevy_app::{PluginGroup, PluginGroupBuilder};
 
+// FIXME: Fix intra-doc links. See https://github.com/bevyengine/bevy/issues/3654
+use bevy_app;
+use bevy_log;
+use bevy_core;
+use bevy_time;
+use bevy_transform;
+use bevy_hierarchy;
+use bevy_diagnostic;
+use bevy_input;
+use bevy_window;
+use bevy_asset;
+use bevy_scene;
+use bevy_render;
+use bevy_sprite;
+use bevy_pbr;
+use bevy_ui;
+use bevy_text;
+use bevy_audio;
+use bevy_gilrs;
+// MGH: Uncomment this out so that I can debug rustdoc
+// use bevy_gltf;
+use bevy_winit;
+
 /// This plugin group will add all the default plugins:
 /// * [`LogPlugin`](bevy_log::LogPlugin)
 /// * [`CorePlugin`](bevy_core::CorePlugin)

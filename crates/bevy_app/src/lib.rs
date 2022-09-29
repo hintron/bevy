@@ -26,6 +26,9 @@ pub mod prelude {
 
 use bevy_ecs::schedule::StageLabel;
 
+// FIXME: Fix intra-doc links. See https://github.com/bevyengine/bevy/issues/3654
+use bevy_ecs;
+
 /// The names of the default [`App`] stages.
 ///
 /// The relative [`Stages`](bevy_ecs::schedule::Stage) are added by [`App::add_default_stages`].
