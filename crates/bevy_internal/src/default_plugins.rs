@@ -18,7 +18,7 @@ use bevy_pbr;
 use bevy_ui;
 use bevy_text;
 use bevy_audio;
-use bevy_gilrs;
+// use bevy_gilrs;
 // MGH: Uncomment this out so that I can debug rustdoc
 // use bevy_gltf;
 use bevy_winit;
@@ -40,10 +40,11 @@ use bevy_winit;
 /// * [`UiPlugin`](bevy_ui::UiPlugin) - with feature `bevy_ui`
 /// * [`TextPlugin`](bevy_text::TextPlugin) - with feature `bevy_text`
 /// * [`AudioPlugin`](bevy_audio::AudioPlugin) - with feature `bevy_audio`
-/// * [`GilrsPlugin`](bevy_gilrs::GilrsPlugin) - with feature `bevy_gilrs`
+/// * [`GilrsPlugin`][custom] - with feature `bevy_gilrs`
 /// * [`GltfPlugin`](bevy_gltf::GltfPlugin) - with feature `bevy_gltf`
 /// * [`WinitPlugin`](bevy_winit::WinitPlugin) - with feature `bevy_winit`
 ///
+/// [custom]: bevy_gilrs::GilrsPlugin
 /// See also [`MinimalPlugins`] for a slimmed down option
 pub struct DefaultPlugins;
 
