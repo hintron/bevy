@@ -7,3 +7,7 @@ Cargo.lock
 /.idea
 /.vscode
 /benches/target
+
+intra-doc-links-debug.txt
+tmp.txt
+tmp/
