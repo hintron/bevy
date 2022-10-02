@@ -5,6 +5,7 @@ pub use crate::{
     transform::prelude::*, utils::prelude::*, window::prelude::*, DefaultPlugins, MinimalPlugins,
 };
 
+#[doc(hidden)]
 pub use bevy_derive::{bevy_main, Deref, DerefMut};
 
 #[doc(hidden)]
