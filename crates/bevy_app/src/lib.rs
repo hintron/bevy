@@ -29,7 +29,6 @@ use bevy_ecs::schedule::StageLabel;
 // FIXME: Fix intra-doc links by putting external crates in scope.
 // See https://github.com/bevyengine/bevy/issues/3654
 // See https://github.com/rust-lang/rust/issues/92910
-#[cfg(doc)]
 use bevy_ecs;
 
 /// The names of the default [`App`] stages.
