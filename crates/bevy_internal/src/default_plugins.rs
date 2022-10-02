@@ -1,6 +1,8 @@
 use bevy_app::{PluginGroup, PluginGroupBuilder};
 
-// FIXME: Fix intra-doc links. See https://github.com/bevyengine/bevy/issues/3654
+// FIXME: Fix intra-doc links by putting external crates in scope.
+// See https://github.com/bevyengine/bevy/issues/3654
+// See https://github.com/rust-lang/rust/issues/92910
 use bevy_app;
 use bevy_log;
 use bevy_core;
@@ -18,9 +20,8 @@ use bevy_pbr;
 use bevy_ui;
 use bevy_text;
 use bevy_audio;
-// use bevy_gilrs;
-// MGH: Uncomment this out so that I can debug rustdoc
-// use bevy_gltf;
+use bevy_gilrs;
+use bevy_gltf;
 use bevy_winit;
 
 /// This plugin group will add all the default plugins:
@@ -40,11 +41,10 @@ use bevy_winit;
 /// * [`UiPlugin`](bevy_ui::UiPlugin) - with feature `bevy_ui`
 /// * [`TextPlugin`](bevy_text::TextPlugin) - with feature `bevy_text`
 /// * [`AudioPlugin`](bevy_audio::AudioPlugin) - with feature `bevy_audio`
-/// * [`GilrsPlugin`][custom] - with feature `bevy_gilrs`
+/// * [`GilrsPlugin`][bevy_gilrs::GilrsPlugin] - with feature `bevy_gilrs`
 /// * [`GltfPlugin`](bevy_gltf::GltfPlugin) - with feature `bevy_gltf`
 /// * [`WinitPlugin`](bevy_winit::WinitPlugin) - with feature `bevy_winit`
 ///
-/// [custom]: bevy_gilrs::GilrsPlugin
 /// See also [`MinimalPlugins`] for a slimmed down option
 pub struct DefaultPlugins;
 
