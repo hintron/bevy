@@ -36,7 +36,7 @@ pub fn derive_dynamic_plugin(input: TokenStream) -> TokenStream {
 /// [`Deref`]: std::ops::Deref
 /// [newtype]: https://doc.rust-lang.org/rust-by-example/generics/new_types.html
 /// [`DerefMut`]: std::ops::DerefMut
-/// [derive]: crate::derive_deref_mut
+/// [derive]: derive_deref_mut
 #[proc_macro_derive(Deref)]
 pub fn derive_deref(input: TokenStream) -> TokenStream {
     derefs::derive_deref(input)
