@@ -1,0 +1,5 @@
+# MGH: Use this to switch between a the local Rust build, nightly, and stable
+[toolchain]
+channel = "local-rust"
+# channel = "nightly"
+# channel = "stable"
