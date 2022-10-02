@@ -3,26 +3,12 @@ use bevy_app::{PluginGroup, PluginGroupBuilder};
 // FIXME: Fix intra-doc links by putting external crates in scope.
 // See https://github.com/bevyengine/bevy/issues/3654
 // See https://github.com/rust-lang/rust/issues/92910
-use bevy_app;
-use bevy_log;
-use bevy_core;
-use bevy_time;
-use bevy_transform;
-use bevy_hierarchy;
-use bevy_diagnostic;
-use bevy_input;
-use bevy_window;
-use bevy_asset;
-use bevy_scene;
-use bevy_render;
-use bevy_sprite;
-use bevy_pbr;
-use bevy_ui;
-use bevy_text;
-use bevy_audio;
-use bevy_gilrs;
-use bevy_gltf;
-use bevy_winit;
+#[cfg(doc)]
+use {
+    bevy_app, bevy_asset, bevy_audio, bevy_core, bevy_diagnostic, bevy_gilrs, bevy_gltf,
+    bevy_hierarchy, bevy_input, bevy_log, bevy_pbr, bevy_render, bevy_scene, bevy_sprite,
+    bevy_text, bevy_time, bevy_transform, bevy_ui, bevy_window, bevy_winit,
+};
 
 /// This plugin group will add all the default plugins:
 /// * [`LogPlugin`](bevy_log::LogPlugin)
